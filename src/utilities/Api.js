@@ -6,7 +6,6 @@ class Backend {
     this.api = axios.create({
       baseURL: Url.getApi(""),
       headers: {
-        "Content-type": "application/json",
         Accept: "*/*",
         "X-CSRF-TOKEN": "ei4TeCFOaGXU4glMdIHYeXFrF7rcR0LmCvfbCovg",
         Authorization: "Bearer " + process.env.REACT_APP_AUTH_TOKEN,
