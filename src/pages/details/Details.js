@@ -36,8 +36,6 @@ const Details = () => {
   }, [slug]);
   console.log(details);
 
-  console.log(details);
-
   return (
     <ThemeProvider theme={LPtheme}>
       {slug === "107" ? (
