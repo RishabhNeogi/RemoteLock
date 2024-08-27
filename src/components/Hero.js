@@ -17,7 +17,7 @@ export default function Hero() {
   const navigate = useNavigate();
 
   const handleClick = (item) => {
-    navigate(`/${item.slug}`);
+    navigate(`/${item.id}`);
   };
 
   const items = [
