@@ -8,7 +8,6 @@ import { useToggleTheme } from "../../context/ToggleThemeContext";
 
 const Admin = () => {
   const { isDark, setIsDark } = useToggleTheme();
-  console.log(setIsDark);
   const LPtheme = createTheme(getLPTheme(isDark));
 
   const toggleColorMode = () => {

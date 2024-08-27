@@ -23,7 +23,6 @@ const Details = () => {
   const LPtheme = createTheme(getLPTheme(isDark));
 
   const slug = window.location.href.split("/").pop();
-  console.log(slug);
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -34,7 +33,6 @@ const Details = () => {
     };
     fetchDetails();
   }, [slug]);
-  console.log(details);
 
   return (
     <ThemeProvider theme={LPtheme}>
