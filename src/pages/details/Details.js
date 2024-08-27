@@ -30,16 +30,17 @@ const Details = () => {
       if (slug === "107" || slug === "108" || slug === "109") {
         const response = await Api.get(`event/${slug}`);
         setDetails(response);
-        console.log(response);
       }
     };
     fetchDetails();
   }, [slug]);
   console.log(details);
 
+  console.log(details);
+
   return (
     <ThemeProvider theme={LPtheme}>
-      {slug === "combined" ? (
+      {slug === "107" ? (
         <>
           <Grid container component="main" sx={{ height: "100vh" }}>
             <CssBaseline />
@@ -47,7 +48,7 @@ const Details = () => {
             <GridCombined />
           </Grid>
         </>
-      ) : slug === "small" ? (
+      ) : slug === "108" ? (
         <>
           <Grid container component="main" sx={{ height: "100vh" }}>
             <CssBaseline />
@@ -55,7 +56,7 @@ const Details = () => {
             <SignUp />
           </Grid>
         </>
-      ) : slug === "medium" ? (
+      ) : slug === "109" ? (
         <>
           <Grid container component="main" sx={{ height: "100vh" }}>
             <CssBaseline />
